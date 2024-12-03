@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PCOS PREDICTOR</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #FF87AB;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 25px;}
+  .bg-1 { 
+    background-color: #FF87AB; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #FF5D8F; /* Dark Blue */
+    color: #FF5D8F;
+  }
+  .bg-3 { 
+    background-color: #FF87AB; /* White */
+    color: #f7f7f2;
+  }
+  .bg-4 { 
+    background-color: #FF87AB; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #FF87AB !important;
+  }
+  #container-v {
+    overflow-y: hidden;
+    width:100% !important;
+  }
+  .child_con {
+    height: 500px;
+    float: left;
+    margin: 1em;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+<!--##########################################################################################################-->
+                                          <!--CHANGED '#' to '/'-->
+        <li><a href="/about">ABOUT PCOS</a></li>
+<!--##########################################################################################################-->
+        <li><a href="#details">LIFESTYLE GUIDANCE</a></li>
+        <li><a href="/practice">PREDICTION</a></li>
+      </ul
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div id="about" class="container-fluid bg-1 text-center">
+  <h3 class="margin">PCOS PREDICTOR</h3>
+  <img src="{{url_for('static', filename='logo1.png')}}" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>PCOS is not a disease, it’s a lifelong condition whose repercussions can be mitigated through certain healthy changes in lifestyle, early detection and seeking help from a professional. Aim of this project is generating awareness about PCOS. </h3>
+</br>
+</div>
+
+
+<!-- Third Container (Grid) -->
+<div id="details" class="container-fluid bg-3 text-center">    
+  <h3 class="margin">LIFESTYLE GUIDANCE</h3><br>
+  <div class="row">
+    <div class="col-sm-4" style="padding:0% 5% 0% 4%">
+      <p> PCOS Friendly Recipes for Women</p>
+      <a href="https://thehormonedietitian.com/recipes/">Link!!</a>
+      <img src="{{url_for('static', filename='food1.png')}}" class="img-responsive margin" style="width:100%; height:200px;padding:20px;" alt="Image">
+    </div>
+    <div class="col-sm-4" style="padding:0% 4% 0% 4%"> 
+      <p>Exercise/Workout Plans</p>
+      <a href="https://www.healthline.com/health/womens-health/exercise-for-pcos">Click Here!!</a>
+      <img src="{{url_for('static', filename='exercise.png')}}" class="img-responsive margin" style="width:100%;height:200px;" alt="Image">
+    </div>
+    <div class="col-sm-4" style="padding:0% 4% 0% 5%"> 
+      <p>Consult a doctor</p>
+      <a href="https://www.google.com/search?client=firefox-b-d&sca_esv=bf172ea85903387e&sxsrf=ADLYWIK1riixbhki0X5EnHCdtmRp6mpQ2w:1731266538678&q=gnaceologists+nearby&nfpr=1&sa=X&ved=2ahUKEwjwrrK4vtKJAxUcUGwGHWxxLakQvgUoAXoECAwQAg&biw=1280&bih=559&dpr=1.5">Gynecologist near me!!</a>
+      <img src="{{url_for('static', filename='doctor1.png')}}" class="img-responsive margin" style="width:100%;height:200px;padding:20px;" alt="Image">
+    </div>
+    <div class="col-sm-4" style="padding:0% 5% 0% 4%">
+      <p>Stress Management Tips</p>
+      <a href="https://mykindred.co/blogs/reproductive-health/stress-management-for-pcos">Explore Tips!!</a>
+      <img src="{{url_for('static', filename='stress1.png')}}" class="img-responsive margin" style="width:100%; height:200px; padding:20px;" alt="Image">
+    </div>
+    <div class="col-sm-4" style="padding:0% 4% 0% 4%">
+      <p>Hormone-Balancing Yoga</p>
+      <a href="https://www.vogue.in/wellness/content/7-best-yoga-poses-for-pcos-menstrual-issues">Try Yoga!!</a>
+      <img src="{{url_for('static', filename='yoga1.png')}}" class="img-responsive margin" style="width:100%; height:200px; padding:20px;" alt="Yoga">
+    </div>
+    <div class="col-sm-4" style="padding:0% 4% 0% 5%">
+      <p>Dietary Supplements</p>
+      <a href="https://www.allarahealth.com/best-pcos-supplements-for-naturally-treating-pcos">Learn About Supplements</a>
+      <img src="{{url_for('static', filename='supplements1.png')}}" class="img-responsive margin" style="width:100%; height:200px; padding:20px;" alt="Supplements">
+    </div>
+    <div class="col-sm-4" style="padding:0% 4% 0% 4%">
+      <p>Work-Life Balance</p>
+      <a href="https://provationlife.com/blogs/news/balancing-act-navigating-pcos-in-the-workplace?srsltid=AfmBOooFCzy2nSip3mDE6FBCJ09JPj42soRcgwOvSlQnMxULavGd7ov7">Read Tips</a>
+      <img src="{{url_for('static', filename='WLB1.png')}}" class="img-responsive margin" style="width:100%; height:200px; padding:20px;" alt="Work-Life Balance">
+    </div>
+    <div class="col-sm-4" style="padding:0% 5% 0% 4%">
+      <p>PCOS Support Groups</p>
+      <a href="https://www.pcosaa.org/social-media-gallery">Join a Group</a>
+      <img src="{{url_for('static', filename='support1.png')}}" class="img-responsive margin" style="width:100%; height:200px; padding:20px;" alt="Support Groups">
+    </div>
+    <div class="col-sm-4" style="padding:0% 5% 0% 4%">
+      <p>Track Your Menstrual Cycle</p>
+      <a href="https://www.motherhoodivf.com/period-tracker-period-calculator.php/?today=11%2F11%2F2024&clength=5&ccycle=28&printit=0">Start Tracking </a>
+      <img src="{{url_for('static', filename='track2.png')}}" class="img-responsive margin" style="width:100%; height:200px; padding:20px;" alt="Menstrual Cycle Tracker">
+    </div>
+    
+  </div>
+</div>
+
+
+
+</body>
+
+</html>
